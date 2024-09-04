@@ -71,12 +71,7 @@ body {
     animation: slide-up 1s ease-out forwards;
     background-color: white;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
+    
 }
 
 @keyframes slide-up {
@@ -157,10 +152,4 @@ hr {
     margin-right: auto;
 }
 
-.auth-links {
-    text-align: right;
-    padding: 10px 20px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
+
