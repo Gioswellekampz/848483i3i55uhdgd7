@@ -163,5 +163,11 @@ a {
 .signup {
     position: absolute;
     right: 150px;
+    top: 5px;
+}
+
+
+.signin {
+    top: 5px;
 }
 
