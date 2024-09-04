@@ -159,3 +159,7 @@ a {
     -ms-user-select: none; /* Per Internet Explorer/Edge */
 }
 
+.signup {
+    right: 30px;
+}
+
