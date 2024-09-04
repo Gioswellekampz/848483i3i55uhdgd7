@@ -58,7 +58,7 @@ h1 {
 
   .center-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 0.1fr)); /* Due colonne automatiche che si adattano alla larghezza */
+    grid-template-columns: repeat(auto-fit, minmax(50px, 0.48fr)); /* Due colonne automatiche che si adattano alla larghezza */
     gap: 4px; /* Spazio tra i pulsanti */
   }
 
