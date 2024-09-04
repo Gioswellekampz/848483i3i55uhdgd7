@@ -153,6 +153,7 @@ hr {
 }
 
 a {
+    text-decoration: none;
     user-select: none; /* Disabilita la selezione del testo */
     -webkit-user-select: none; /* Per browser WebKit (Safari, Chrome) */
     -moz-user-select: none; /* Per Firefox */
@@ -160,6 +161,7 @@ a {
 }
 
 .signup {
+    position: absolute;
     right: 30px;
 }
 
