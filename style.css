@@ -152,4 +152,10 @@ hr {
     margin-right: auto;
 }
 
+a {
+    user-select: none; /* Disabilita la selezione del testo */
+    -webkit-user-select: none; /* Per browser WebKit (Safari, Chrome) */
+    -moz-user-select: none; /* Per Firefox */
+    -ms-user-select: none; /* Per Internet Explorer/Edge */
+}
 
