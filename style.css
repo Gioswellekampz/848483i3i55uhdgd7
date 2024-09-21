@@ -1,91 +1,78 @@
-h1 {
-    text-align: center;
-    color: black;
-    animation-name: example;
-    font-size: 3em;
-    animation: slide-up 1s ease-out forwards;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.button-games {
-    font-size: 16px; /* Dimensione del testo */
-
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 20px; /* Spazio interno al testo */
-    margin: 20px; /* Spazio esterno attorno al testo */
-    margin-left: 370px;
-    border: 2px solid transparent; /* Bordo iniziale invisibile */
-    border-radius: 5px; /* Angoli arrotondati */
-    background-color: #388E3C; /* Colore di sfondo iniziale */
-    color: #333; /* Colore del testo iniziale */
-    text-align: center; /* Allineamento del testo */
-    cursor: pointer; /* Cambia il cursore quando sopra il testo */
-    width: 100px;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transizione fluida */
-  }
-  
-  /* Stile al passaggio del mouse */
-  .button-games:hover {
-    transform: scale(1.1); /* Ingrandisce il testo del 10% */
-    background-color: #4CAF50; /* Colore di sfondo verde quando si passa sopra */
-    color: white; /* Colore del testo bianco quando si passa sopra */
-    border-color: #388E3C; /* Colore del bordo verde scuro quando si passa sopra */
-  }
-
-  .button-socials {
-    font-size: 16px; /* Dimensione del testo */
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 20px; /* Spazio interno al testo */
-    margin: 20px; /* Spazio esterno attorno al testo */
-    margin-left: 185px;
-    border: 2px solid transparent; /* Bordo iniziale invisibile */
-    border-radius: 5px; /* Angoli arrotondati */
-    background-color: #388E3C; /* Colore di sfondo iniziale */
-    color: #333; /* Colore del testo iniziale */
-    text-align: center; /* Allineamento del testo */
-    cursor: pointer; /* Cambia il cursore quando sopra il testo */
-    width: 100px;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transizione fluida */
-  }
-  
-  /* Stile al passaggio del mouse */
-  .button-socials:hover {
-    transform: scale(1.1); /* Ingrandisce il testo del 10% */
-    background-color: #4CAF50; /* Colore di sfondo verde quando si passa sopra */
-    color: white; /* Colore del testo bianco quando si passa sopra */
-    border-color: #388E3C; /* Colore del bordo verde scuro quando si passa sopra */
-  }
-
-  .center-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 0.48fr)); /* Due colonne automatiche che si adattano alla larghezza */
-    gap: 4px; /* Spazio tra i pulsanti */
-  }
-
-.center-image {
-    display: block; /* Imposta l'immagine come un elemento a blocco */
-    margin: 0 auto; /* Applica margini automatici a sinistra e a destra */
-  }
-
+/* Stili di base */
 body {
     animation: slide-up 1s ease-out forwards;
     background-color: white;
     font-family: Arial, sans-serif;
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+h1 {
+    text-align: center;
+    color: black;
+    animation: slide-up 1s ease-out forwards;
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+/* Layout principale per bottoni e immagini */
+.center-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Per permettere ai bottoni di avvolgersi su righe diverse nei piccoli schermi */
+    margin: 20px;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Assicura che l'immagine non esca dai limiti dello schermo */
+    height: auto;
+}
+
+/* Bottoni */
+.button-games, .button-socials {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #388E3C;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    width: 150px; /* Aumentata larghezza per migliorare l'usabilità su mobile */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-games:hover, .button-socials:hover {
+    transform: scale(1.1);
+    background-color: #4CAF50;
+    color: white;
+    border-color: #388E3C;
+}
+
+/* Animazione slide-up */
 @keyframes slide-up {
     from {
-      opacity: 0;
-      transform: translateY(50px);
+        opacity: 0;
+        transform: translateY(50px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
 
-  .cookie-banner {
+/* Cookie banner */
+.cookie-banner {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -97,78 +84,87 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-  }
-  
-  .cookie-banner p {
+}
+
+.cookie-banner p {
     margin: 0;
     font-size: 14px;
-  }
-  
-  .cookie-banner a {
+}
+
+.cookie-banner a {
     color: #4CAF50;
     text-decoration: none;
-  }
-  
-  .cookie-banner a:hover {
+}
+
+.cookie-banner a:hover {
     text-decoration: underline;
-  }
-  
-  .accept-button {
+}
+
+.accept-button {
     background-color: #4CAF50;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .accept-button:hover {
-    background-color: #45a049;
-  }
+}
 
+.accept-button:hover {
+    background-color: #45a049;
+}
+
+/* Logo */
 .glueylayout {
-    
     padding-right: 1810px;
     background-color: black;
     height: 19px;
-  
 }
 
-h2 {
-    text-align: center;
-}
-
+/* Linea orizzontale */
 hr {
-    border-bottom-width: 0px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-top-color: rgb(0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
-    border-bottom-color: rgb(0, 0, 0);
-    border-left-color: rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
-    margin-left: auto;
-    margin-right: auto;
+    border-top: 1px solid black;
+    width: 150px;
+    margin: 0 auto;
 }
 
+/* Link */
 a {
     text-decoration: none;
-    user-select: none; /* Disabilita la selezione del testo */
-    -webkit-user-select: none; /* Per browser WebKit (Safari, Chrome) */
-    -moz-user-select: none; /* Per Firefox */
-    -ms-user-select: none; /* Per Internet Explorer/Edge */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
+/* Posizionamento signup */
 .signup {
     position: absolute;
     right: 150px;
-    
 }
 
-
-.signin {
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
     
+    .button-games, .button-socials {
+        width: 100%; /* I bottoni occupano l'intera larghezza del contenitore */
+        font-size: 14px;
+        padding: 12px;
+    }
+    
+    .center-container {
+        flex-direction: column; /* I bottoni si posizionano uno sopra l'altro nei piccoli schermi */
+    }
+    
+    .cookie-banner p {
+        font-size: 12px; /* Dimensione del testo ridotta su dispositivi mobili */
+    }
+
+    .signup {
+        right: 50px;
+    }
 }
+
 
