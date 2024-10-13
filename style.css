@@ -129,7 +129,7 @@ body {
 .glueylayout {
     
     padding-right: 1810px;
-    background-color: black;
+    background-color: white;
     height: 19px;
   
 }
@@ -164,22 +164,24 @@ a {
 .contact {
     position: absolute;
     right: 136px;
-    
+    color: black;
 }
 
 
 .forum {
-    
+    color: black;
 }
 
 .about {
     position: absolute;
     right: 210px;
+    color: black;
 }
 
 .home {
     position: absolute;
     right: 270px;
+    color: black;
 }
 
 
