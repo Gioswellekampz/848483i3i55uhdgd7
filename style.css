@@ -161,15 +161,25 @@ a {
     -ms-user-select: none; /* Per Internet Explorer/Edge */
 }
 
-.signup {
+.contact {
     position: absolute;
-    right: 130px;
+    right: 120px;
     
 }
 
 
-.signin {
+.forum {
     
+}
+
+.about {
+    position: absolute;
+    right: 120px;
+}
+
+.home {
+    position: absolute;
+    right: 120px;
 }
 
 
